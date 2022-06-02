@@ -1,0 +1,144 @@
+/*Start: Розмітка основного блоку .maineContainer */
+.maineContainer {
+	margin: 30px auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	text-align: center;
+	height: 90vh;
+	width: 900px;
+	border: 1px solid black;
+	position: relative;
+}
+
+/*End: Розмітка основного блоку .maineContainer */
+
+/*Start: Розмітка основного блоку .timer */
+div.timer {
+	font-size: 120px;
+	font-weight: bold;
+}
+
+/*End: Розмітка основного блоку .timer */
+
+/*Start: Розмітка основного блоку .setGames */
+.setGames {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.setGames input {
+	margin: 0 20px;
+	height: 50px;
+	width: 150px;
+	border-radius: 5px;
+	background-color: rgba(255, 0, 0, 0.700);
+	border-color: rgba(0, 0, 0, 0.700);
+	color: white;
+	font-size: 20px;
+}
+
+.setGames input:disabled {
+	background-color: rgba(255, 0, 0, 0.350);
+}
+
+/*End: Розмітка основного блоку .gameContainer */
+
+/*Start: Розмітка основного блоку .gameContainer */
+.gameContainer {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+.gameContainer div.puzzle {
+	width: 382px;
+	height: 442px;
+	border: 1px solid black;
+}
+
+.puzzle {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+
+div.randonPuzzPieces,
+div.randonPuzzPieces div {
+	width: 95px;
+	height: 110px;
+}
+
+div.randonPuzzPieces div {
+	background-image: url(https://upload.wikimedia.org/wikipedia/ru/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png);
+	background-size: 400% 400%;
+}
+
+/*End: Розмітка основного блоку .gameContainer */
+
+/*Start: Розмітка .modalCheck */
+.modalCheck,
+.modalWinn,
+.modalLose {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 700px;
+	height: 300px;
+	text-align: center;
+	background-color: aliceblue;
+	border: 1px solid black;
+	border-radius: 5px;
+	z-index: 2;
+	position: absolute;
+	top: 200px;
+	left: 20%;
+}
+
+.modalCheck p,
+.modalWinn p,
+.modalLose p {
+	margin: 0 auto;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.modalCheck input,
+.modalWinn input,
+.modalLose input {
+	width: 100px;
+	height: 45px;
+	margin: 0 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 20px;
+	color: white;
+
+}
+
+.modalCheck input:nth-of-type(1),
+.modalWinn input:nth-of-type(1),
+.modalLose input:nth-of-type(1) {
+	background-color: red;
+}
+
+.modalCheck input:nth-of-type(2) {
+	background-color: green;
+}
+
+/*End: Розмітка .modalCheck */
+
+/*Start: Розмітка .someFone */
+.someFone {
+	background-color: rgba(0, 0, 0, 0.200);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+/*End: Розмітка .someFone */
